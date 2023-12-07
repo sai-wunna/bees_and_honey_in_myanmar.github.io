@@ -1,0 +1,45 @@
+.bee_btn {
+  min-width: 110px;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background: url('../../../public/assets/images/close_look_to_beehive_crop.jpg')
+    center center;
+  background-size: 110px;
+  box-shadow: 0 4px 8px rgba(255, 217, 0, 0.744);
+  transition: transform 0.3s ease, background-size 0.3s ease;
+}
+
+.bee_btn:hover {
+  transform: translate(0, 2px);
+  background-size: 125px;
+  box-shadow: 0 4px 8px rgba(255, 217, 0, 0.894);
+}
+
+.hexagon_btn {
+  width: 120px;
+  height: 137px;
+  color: rgb(130, 130, 162);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background: url('../../../public/assets/images/hexagon_simple_ring.png')
+    center center;
+  background-size: 140px;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out;
+}
+.hexagon_btn:hover {
+  background-size: 120px;
+}
+.hexagon_btn:focus {
+  background-size: 0px;
+}

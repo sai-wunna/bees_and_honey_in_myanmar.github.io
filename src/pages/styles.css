@@ -1,0 +1,27 @@
+/* custom modal start */
+.detail-modal-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  transition: background-color 0.3s ease;
+}
+.detail-modal-content {
+  position: absolute;
+  transform: translate(0%, -150%);
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  padding: 20px;
+  overflow: auto;
+  opacity: 0.5;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* custom modal end */

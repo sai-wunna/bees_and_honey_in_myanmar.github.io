@@ -1,0 +1,75 @@
+#pastures_and_migrations h4,
+#houses_and_keepers h4 {
+  background-color: rgb(255, 217, 0);
+  display: inline;
+  color: rgb(107, 107, 107);
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
+.map_box {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 780px;
+  cursor: pointer;
+  background-color: aliceblue;
+  z-index: 500;
+  box-shadow: 0 4px 8px rgba(69, 69, 69, 0.744);
+}
+.map_box img {
+  width: 100%;
+  z-index: 700;
+}
+
+.map-modal {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  display: none;
+  z-index: 1200;
+  padding: 20px;
+  opacity: 1;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  background-color: rgb(254, 255, 240);
+  border-radius: 10px;
+  border: 2px solid rgb(180, 180, 0);
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+    left 0.3s ease-in-out;
+}
+
+#map_pin_provider {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-radius: 30% 30% 100% 100%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  background-color: rgb(254, 255, 240);
+  border: 2px solid rgb(180, 180, 0);
+}
+
+/* bee houses start */
+#houses_and_keepers h6 {
+  border-bottom: 2px solid rgb(255, 217, 0);
+}
+
+.bee_houses_img_box img,
+.bee_keepers_img_box img {
+  width: 90%;
+  margin: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(69, 69, 69, 0.744);
+}
+
+/* bee houses end */
+
+@media only screen and (max-width: 780px) {
+  .map_box {
+    cursor: auto;
+  }
+  .bee_houses_img_box,
+  .bee_keepers_img_box {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+}

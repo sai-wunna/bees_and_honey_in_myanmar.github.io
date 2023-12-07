@@ -1,0 +1,82 @@
+#main_navbar {
+  backdrop-filter: blur(50px);
+  box-shadow: 0 4px 8px rgba(255, 217, 0, 0.744);
+  z-index: 1500;
+}
+
+#main_title {
+  color: transparent;
+  background: url('../../../public/assets/images/close_look_to_beehive_crop.jpg')
+    center center;
+  background-size: contain;
+  -webkit-background-clip: text;
+  background-clip: text;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-weight: 700;
+}
+#title_location {
+  font-size: 20px;
+}
+.navigator {
+  display: none;
+  padding: 20px;
+  background: url('../../../public/assets/images/bee.png') center center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  border: none;
+  transition: border 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+.navigator:hover {
+  border-bottom: 2px solid rgb(227, 224, 48);
+}
+.nav-box {
+  display: block;
+}
+.nav-item {
+  display: inline-block;
+}
+.focus_nav::before {
+  content: '';
+  position: absolute;
+  margin-left: -25px;
+  margin-top: -20px;
+  width: 30px;
+  height: 30px;
+  background: url('../../../public/assets/images/bee.png') center center
+    no-repeat;
+  background-size: contain;
+  transition: transform 0.3s ease;
+}
+.focus_nav:hover::before {
+  transform: translate(-40%, -40%);
+}
+
+@media only screen and (max-width: 780px) {
+  .navigator {
+    display: block;
+  }
+  .nav-box {
+    position: fixed;
+    width: 200px;
+    height: 110vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.746);
+    top: 0;
+    right: 0;
+    gap: 20px;
+    padding: 25px;
+    transition: transform 0.3s ease-in;
+    z-index: 1000;
+  }
+  .pre-open-nav {
+    display: flex;
+    transform: translate(100%, 0);
+  }
+  .opened-nav {
+    transform: translate(0, 0);
+  }
+}

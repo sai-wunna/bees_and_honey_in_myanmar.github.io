@@ -1,0 +1,19 @@
+.smooth_the_page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1010;
+}
+.smooth_loader {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1100;
+  transition: background-color 0.2s ease-in-out;
+}

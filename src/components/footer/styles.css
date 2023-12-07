@@ -1,0 +1,14 @@
+#main_footer {
+  width: 100%;
+  min-height: 150px;
+  background: url('../../../public/assets/images/honey_dorp.png');
+  background-repeat: repeat-x;
+  background-size: 300px;
+  background-position: bottom center;
+  box-shadow: 4px 0 8px rgba(255, 217, 0, 0.744);
+  transition: background-size 1s ease-in-out;
+  z-index: 1500;
+}
+#main_footer:hover {
+  background-size: 320px;
+}

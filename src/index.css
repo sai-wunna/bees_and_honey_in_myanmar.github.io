@@ -1,0 +1,42 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(191, 165, 247);
+  border-radius: 6px;
+}
+* {
+  scrollbar-width: none;
+  scrollbar-color: rgb(191, 165, 247);
+}
+
+*::-moz-scrollbar-thumb {
+  background-color: rgb(191, 165, 247);
+  border-radius: 6px;
+}
+
+*::-moz-scrollbar-track {
+  background-color: rgb(191, 165, 247);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 247);
+}
+
+p {
+  text-indent: 2em;
+}
+
+h2,
+.map-modal h6 {
+  background-color: rgb(255, 217, 0);
+  color: rgb(107, 107, 107);
+  border-radius: 5px;
+  padding: 4px 10px;
+}
